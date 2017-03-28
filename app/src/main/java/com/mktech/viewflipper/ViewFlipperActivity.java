@@ -45,18 +45,17 @@ public class ViewFlipperActivity extends AppCompatActivity {
 		
 		@Override
 		public boolean onFling(MotionEvent e1, MotionEvent e2, float velocityX, float velocityY) {
-			if (e1.getX()-e2.getX()>MIN_DISTANCE)
-            {
+			if (e1.getX() - e2.getX() > MIN_DISTANCE) {
 				mViewFlipper.setInAnimation(ViewFlipperActivity.this, R.anim.slide_in);
 				mViewFlipper.setOutAnimation(ViewFlipperActivity.this, R.anim.slide_out);
-                mViewFlipper.showNext();
-            }else if (e2.getX()-e1.getX()>MIN_DISTANCE){
+				mViewFlipper.showNext();
+			} else if (e2.getX() - e1.getX() > MIN_DISTANCE) {
 				mViewFlipper.setInAnimation(ViewFlipperActivity.this, R.anim.slide_in);
 				mViewFlipper.setOutAnimation(ViewFlipperActivity.this, R.anim.slide_out);
-                mViewFlipper.showPrevious();
-            }
-
-            return true;
+				mViewFlipper.showPrevious();
+			}
+			
+			return true;
 		}
 	}
 	
