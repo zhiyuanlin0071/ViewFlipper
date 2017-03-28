@@ -10,7 +10,7 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.ViewFlipper;
 
-public class MainActivity extends AppCompatActivity {
+public class ViewFlipperActivity extends AppCompatActivity {
 	private ViewFlipper			mViewFlipper;
 	private int[]				image			= new int[]{R.drawable.board_browser, R.drawable.board_filebrowser, R.drawable.board_gallery,
 			R.drawable.board_youtube};
@@ -47,12 +47,12 @@ public class MainActivity extends AppCompatActivity {
 		public boolean onFling(MotionEvent e1, MotionEvent e2, float velocityX, float velocityY) {
 			if (e1.getX()-e2.getX()>MIN_DISTANCE)
             {
-                mViewFlipper.setInAnimation(MainActivity.this,R.anim.slide_in);
-                mViewFlipper.setOutAnimation(MainActivity.this,R.anim.slide_out);
+				mViewFlipper.setInAnimation(ViewFlipperActivity.this, R.anim.slide_in);
+				mViewFlipper.setOutAnimation(ViewFlipperActivity.this, R.anim.slide_out);
                 mViewFlipper.showNext();
             }else if (e2.getX()-e1.getX()>MIN_DISTANCE){
-                mViewFlipper.setInAnimation(MainActivity.this,R.anim.slide_in);
-                mViewFlipper.setOutAnimation(MainActivity.this,R.anim.slide_out);
+				mViewFlipper.setInAnimation(ViewFlipperActivity.this, R.anim.slide_in);
+				mViewFlipper.setOutAnimation(ViewFlipperActivity.this, R.anim.slide_out);
                 mViewFlipper.showPrevious();
             }
 
