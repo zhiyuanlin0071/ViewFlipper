@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/activity_main"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.mktech.viewflipper.MainActivity">
+    <!--静态添加-->
+    <!--<ViewFlipper-->
+    <!--android:id="@+id/viewFilpper"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:flipInterval="2000"-->
+    <!--android:inAnimation="@anim/slide_in"-->
+    <!--android:outAnimation="@anim/slide_out"-->
+    <!--&gt;-->
+
+    <!--<include layout="@layout/bg_1"></include>-->
+
+    <!--<include layout="@layout/bg_2"></include>-->
+
+    <!--<include layout="@layout/bg_3"></include>-->
+    <!--</ViewFlipper>-->
+    <!--动态添加-->
+    <ViewFlipper
+        android:id="@+id/viewFilpper"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:flipInterval="2000"
+        >
+    </ViewFlipper>
+</RelativeLayout>
