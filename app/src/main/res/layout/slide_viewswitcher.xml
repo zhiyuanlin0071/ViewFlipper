@@ -5,12 +5,12 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_columnSpan="10"
-    android:numColumns="4"
-    android:verticalSpacing="20dp"
-    android:horizontalSpacing="20dp"
-    android:padding="15dp"
     android:focusable="true"
     android:focusableInTouchMode="true"
+    android:horizontalSpacing="20dp"
+    android:numColumns="4"
+    android:padding="15dp"
     android:scrollbars="none"
+    android:verticalSpacing="20dp"
 
     ></GridView>
