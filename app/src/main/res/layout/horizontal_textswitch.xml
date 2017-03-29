@@ -10,11 +10,16 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ellipsize="marquee"
+        android:focusable="true"
         android:focusableInTouchMode="true"
-        android:textSize="22sp"
         android:marqueeRepeatLimit="marquee_forever"
         android:singleLine="true"
-        android:focusable="true"
-        android:text="昆仑决奥斯卡第六届奥斯卡了解到卢卡斯讲道理凉快到家了按了肯德基沙拉进来看多卢卡斯静安寺来看待静安寺路口立刻啦垃圾多了"/>
+        android:text="昆仑决奥斯卡第六届奥斯卡了解到卢卡斯讲道理凉快到家了按了肯德基沙拉进来看多卢卡斯静安寺来看待静安寺路口立刻啦垃圾多了"
+        android:textSize="22sp"/>
 
+    <com.mktech.viewflipper.MarqueeTextSwitchView
+        android:id="@+id/marquee"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        ></com.mktech.viewflipper.MarqueeTextSwitchView>
 </LinearLayout>
